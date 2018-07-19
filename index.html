@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>New York Times Search</title>
+
+  <!-- CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bevan" rel="stylesheet">
+  <link href="./assets/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Header -->
+    <header class="jumbotron my-4">
+      <h1 class="display-5 text-center">
+        <i class="fas fa-newspaper"></i>
+        New York Times Search</h1>
+    </header>
+
+    <!-- Page Features -->
+    <div class="row">
+      <div class="col-lg-12 col-md-12 mb-4">
+        <div class="card">
+          <div class="card-header text-left">
+            Search Parameters
+          </div>
+          <div class="card-body text-left">
+            <form>
+              <div class="form-group">
+                <label for="search">Search Term:</label>
+                <input type="text" class="form-control" id="search-term" placeholder="What would you like to search for?">
+              </div>
+              <div class="form-group">
+                <label for="records-query">Number of Records:</label>
+                <input type="text" class="form-control" id="records" placeholder="5">
+              </div>
+              <div class="form-group">
+                <label for="start">Start Year (Optional):</label>
+                <input type="text" class="form-control" id="start-year" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="end">End Year (Optional):</label>
+                <input type="text" class="form-control" id="end-year" placeholder="">
+              </div>
+
+              <button id="submit" class="btn btn-primary">
+                <i class="fas fa-search"></i>
+                Submit</button>
+              <button id="clear" class="btn btn-primary">
+                <i class="fas fa-trash-alt"></i>
+                Clear Results</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-lg-12 col-md-12 mb-4">
+        <div class="card">
+          <div class="card-header text-left">
+            <i class="fas fa-newspaper"></i>
+            Top Articles
+          </div>
+          <div class="card-body text-left" id="article-payload">
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+
+
+
+  <!-- Bootstrap core JavaScript -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="./assets/js/search.js"></script>
+
+
+</body>
+
+</html>
