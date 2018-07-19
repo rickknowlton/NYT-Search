@@ -9,11 +9,15 @@ $(document).ready(function () {
     var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
 
     function runSearch() {
-        console.log("GOT HERE!");
+        // console.log("GOT HERE!");
         userSearch = $("#search-term").val();
+        // console.log(userSearch);
         startDate = $("#start-year").val();
+        // console.log(startDate);
         endDate = $("#end-year").val();
+        // console.log(endDate);
         userRecords = $("#records").val();
+        // console.log(userRecords);
 
         url += '?' + $.param({
             'api-key': "fe19669912c945759fb837d25041d6e4",
@@ -23,6 +27,7 @@ $(document).ready(function () {
             'sort': "newest",
             'fl': "web_url,headline"
         });
+        console.log(url)
         $.ajax({
             url: url,
             method: 'GET',
@@ -41,10 +46,11 @@ $(document).ready(function () {
 
     function resetSearch() {
         $articleList.empty();
-        // userSearch.val("");
-        // endDate.val("");
-        // startDate.val("");
-        // userRecords.val("");
+        url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
+        userSearch = null;
+        endDate=null;
+        startDate=null;
+        userRecords=null;
        document.getElementById("searchForm").reset();
 
     }
